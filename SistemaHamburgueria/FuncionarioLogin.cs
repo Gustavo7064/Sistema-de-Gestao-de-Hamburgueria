@@ -16,5 +16,10 @@ namespace SistemaHamburgueria
         {
             InitializeComponent();
         }
+
+        private void FuncionarioLogin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
