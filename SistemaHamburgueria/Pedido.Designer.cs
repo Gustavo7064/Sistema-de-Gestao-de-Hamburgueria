@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pedido));
-            this.panel5 = new System.Windows.Forms.Panel();
+            this.pnlResumo = new System.Windows.Forms.Panel();
             this.lblValorAcompanhamentos = new System.Windows.Forms.Label();
             this.lblVAcompanhamentos = new System.Windows.Forms.Label();
             this.lblValorLanche = new System.Windows.Forms.Label();
@@ -39,7 +39,6 @@
             this.lblVBebida = new System.Windows.Forms.Label();
             this.grpRetirar = new System.Windows.Forms.GroupBox();
             this.chkFrango = new System.Windows.Forms.CheckBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.chkMolho = new System.Windows.Forms.CheckBox();
             this.chkQueijo = new System.Windows.Forms.CheckBox();
             this.chkSalada = new System.Windows.Forms.CheckBox();
@@ -53,64 +52,63 @@
             this.lblVLanche = new System.Windows.Forms.Label();
             this.lblResumo = new System.Windows.Forms.Label();
             this.lblValorPagar = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.pnlBebidas = new System.Windows.Forms.Panel();
             this.cmbBebidas = new System.Windows.Forms.ComboBox();
             this.lblBebidas = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.pnlAcompanhamentos = new System.Windows.Forms.Panel();
             this.cmbAcompanhamentos = new System.Windows.Forms.ComboBox();
             this.lblAcompanhamentos = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.pnlLanche = new System.Windows.Forms.Panel();
             this.cmbLanches = new System.Windows.Forms.ComboBox();
             this.lblLanches = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.lblNovoPedido = new System.Windows.Forms.Label();
+            this.pnlSidebar = new System.Windows.Forms.Panel();
             this.bntBebidas = new System.Windows.Forms.Button();
             this.btnAcompanhamentos = new System.Windows.Forms.Button();
             this.btnLanches = new System.Windows.Forms.Button();
             this.btnSair = new System.Windows.Forms.Button();
             this.btnNovoPedido = new System.Windows.Forms.Button();
-            this.PictureBox = new System.Windows.Forms.PictureBox();
+            this.ptcrBoxLogo = new System.Windows.Forms.PictureBox();
             this.grpAdicionar = new System.Windows.Forms.GroupBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblAdicionais = new System.Windows.Forms.Label();
             this.chkMaionese = new System.Windows.Forms.CheckBox();
             this.chkBacon = new System.Windows.Forms.CheckBox();
             this.chkMolhoEspecial = new System.Windows.Forms.CheckBox();
             this.chkCatupiryA = new System.Windows.Forms.CheckBox();
             this.chkHabmburguer = new System.Windows.Forms.CheckBox();
             this.chkCheddar = new System.Windows.Forms.CheckBox();
-            this.panel5.SuspendLayout();
+            this.pnlResumo.SuspendLayout();
             this.grpRetirar.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox)).BeginInit();
+            this.pnlBebidas.SuspendLayout();
+            this.pnlAcompanhamentos.SuspendLayout();
+            this.pnlLanche.SuspendLayout();
+            this.pnlSidebar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptcrBoxLogo)).BeginInit();
             this.grpAdicionar.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel5
+            // pnlResumo
             // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(51)))), ((int)(((byte)(45)))));
-            this.panel5.Controls.Add(this.lblValorAcompanhamentos);
-            this.panel5.Controls.Add(this.lblVAcompanhamentos);
-            this.panel5.Controls.Add(this.lblValorLanche);
-            this.panel5.Controls.Add(this.lblValorOpcionais);
-            this.panel5.Controls.Add(this.lblValorBebida);
-            this.panel5.Controls.Add(this.lblValorTotal);
-            this.panel5.Controls.Add(this.lblVBebida);
-            this.panel5.Controls.Add(this.grpRetirar);
-            this.panel5.Controls.Add(this.btnSalvar);
-            this.panel5.Controls.Add(this.lblVOpcionais);
-            this.panel5.Controls.Add(this.btnCalcular);
-            this.panel5.Controls.Add(this.lblVLanche);
-            this.panel5.Controls.Add(this.lblResumo);
-            this.panel5.Controls.Add(this.lblValorPagar);
-            this.panel5.ForeColor = System.Drawing.Color.Black;
-            this.panel5.Location = new System.Drawing.Point(659, 86);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(367, 504);
-            this.panel5.TabIndex = 47;
+            this.pnlResumo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(51)))), ((int)(((byte)(45)))));
+            this.pnlResumo.Controls.Add(this.lblValorAcompanhamentos);
+            this.pnlResumo.Controls.Add(this.lblVAcompanhamentos);
+            this.pnlResumo.Controls.Add(this.lblValorLanche);
+            this.pnlResumo.Controls.Add(this.lblValorOpcionais);
+            this.pnlResumo.Controls.Add(this.lblValorBebida);
+            this.pnlResumo.Controls.Add(this.lblValorTotal);
+            this.pnlResumo.Controls.Add(this.lblVBebida);
+            this.pnlResumo.Controls.Add(this.grpRetirar);
+            this.pnlResumo.Controls.Add(this.btnSalvar);
+            this.pnlResumo.Controls.Add(this.lblVOpcionais);
+            this.pnlResumo.Controls.Add(this.btnCalcular);
+            this.pnlResumo.Controls.Add(this.lblVLanche);
+            this.pnlResumo.Controls.Add(this.lblResumo);
+            this.pnlResumo.Controls.Add(this.lblValorPagar);
+            this.pnlResumo.ForeColor = System.Drawing.Color.Black;
+            this.pnlResumo.Location = new System.Drawing.Point(659, 86);
+            this.pnlResumo.Name = "pnlResumo";
+            this.pnlResumo.Size = new System.Drawing.Size(367, 504);
+            this.pnlResumo.TabIndex = 47;
             // 
             // lblValorAcompanhamentos
             // 
@@ -202,7 +200,6 @@
             this.grpRetirar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.grpRetirar.CausesValidation = false;
             this.grpRetirar.Controls.Add(this.chkFrango);
-            this.grpRetirar.Controls.Add(this.label1);
             this.grpRetirar.Controls.Add(this.chkMolho);
             this.grpRetirar.Controls.Add(this.chkQueijo);
             this.grpRetirar.Controls.Add(this.chkSalada);
@@ -236,17 +233,6 @@
             this.chkFrango.TabIndex = 8;
             this.chkFrango.Text = "Frango";
             this.chkFrango.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(203, 0);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 20);
-            this.label1.TabIndex = 38;
             // 
             // chkMolho
             // 
@@ -427,17 +413,17 @@
             this.lblValorPagar.TabIndex = 26;
             this.lblValorPagar.Text = "Total a pagar:";
             // 
-            // panel4
+            // pnlBebidas
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(51)))), ((int)(((byte)(45)))));
-            this.panel4.Controls.Add(this.cmbBebidas);
-            this.panel4.Controls.Add(this.lblBebidas);
-            this.panel4.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.panel4.ForeColor = System.Drawing.Color.Black;
-            this.panel4.Location = new System.Drawing.Point(270, 341);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(367, 105);
-            this.panel4.TabIndex = 49;
+            this.pnlBebidas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(51)))), ((int)(((byte)(45)))));
+            this.pnlBebidas.Controls.Add(this.cmbBebidas);
+            this.pnlBebidas.Controls.Add(this.lblBebidas);
+            this.pnlBebidas.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.pnlBebidas.ForeColor = System.Drawing.Color.Black;
+            this.pnlBebidas.Location = new System.Drawing.Point(270, 341);
+            this.pnlBebidas.Name = "pnlBebidas";
+            this.pnlBebidas.Size = new System.Drawing.Size(367, 105);
+            this.pnlBebidas.TabIndex = 49;
             // 
             // cmbBebidas
             // 
@@ -465,16 +451,16 @@
             this.lblBebidas.TabIndex = 36;
             this.lblBebidas.Text = "Bebidas";
             // 
-            // panel3
+            // pnlAcompanhamentos
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(51)))), ((int)(((byte)(45)))));
-            this.panel3.Controls.Add(this.cmbAcompanhamentos);
-            this.panel3.Controls.Add(this.lblAcompanhamentos);
-            this.panel3.ForeColor = System.Drawing.Color.Black;
-            this.panel3.Location = new System.Drawing.Point(270, 216);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(367, 103);
-            this.panel3.TabIndex = 48;
+            this.pnlAcompanhamentos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(51)))), ((int)(((byte)(45)))));
+            this.pnlAcompanhamentos.Controls.Add(this.cmbAcompanhamentos);
+            this.pnlAcompanhamentos.Controls.Add(this.lblAcompanhamentos);
+            this.pnlAcompanhamentos.ForeColor = System.Drawing.Color.Black;
+            this.pnlAcompanhamentos.Location = new System.Drawing.Point(270, 216);
+            this.pnlAcompanhamentos.Name = "pnlAcompanhamentos";
+            this.pnlAcompanhamentos.Size = new System.Drawing.Size(367, 103);
+            this.pnlAcompanhamentos.TabIndex = 48;
             // 
             // cmbAcompanhamentos
             // 
@@ -501,16 +487,16 @@
             this.lblAcompanhamentos.TabIndex = 34;
             this.lblAcompanhamentos.Text = "Acompanhamentos";
             // 
-            // panel2
+            // pnlLanche
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(51)))), ((int)(((byte)(45)))));
-            this.panel2.Controls.Add(this.cmbLanches);
-            this.panel2.Controls.Add(this.lblLanches);
-            this.panel2.ForeColor = System.Drawing.Color.Black;
-            this.panel2.Location = new System.Drawing.Point(270, 86);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(367, 114);
-            this.panel2.TabIndex = 46;
+            this.pnlLanche.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(51)))), ((int)(((byte)(45)))));
+            this.pnlLanche.Controls.Add(this.cmbLanches);
+            this.pnlLanche.Controls.Add(this.lblLanches);
+            this.pnlLanche.ForeColor = System.Drawing.Color.Black;
+            this.pnlLanche.Location = new System.Drawing.Point(270, 86);
+            this.pnlLanche.Name = "pnlLanche";
+            this.pnlLanche.Size = new System.Drawing.Size(367, 114);
+            this.pnlLanche.TabIndex = 46;
             // 
             // cmbLanches
             // 
@@ -540,34 +526,34 @@
             this.lblLanches.TabIndex = 32;
             this.lblLanches.Text = "Lanches";
             // 
-            // label5
+            // lblNovoPedido
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(234)))), ((int)(((byte)(214)))));
-            this.label5.Location = new System.Drawing.Point(277, 20);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(322, 45);
-            this.label5.TabIndex = 45;
-            this.label5.Text = "Monte o seu pedido";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.lblNovoPedido.AutoSize = true;
+            this.lblNovoPedido.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNovoPedido.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(234)))), ((int)(((byte)(214)))));
+            this.lblNovoPedido.Location = new System.Drawing.Point(277, 20);
+            this.lblNovoPedido.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNovoPedido.Name = "lblNovoPedido";
+            this.lblNovoPedido.Size = new System.Drawing.Size(322, 45);
+            this.lblNovoPedido.TabIndex = 45;
+            this.lblNovoPedido.Text = "Monte o seu pedido";
+            this.lblNovoPedido.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             // 
-            // panel1
+            // pnlSidebar
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(39)))), ((int)(((byte)(35)))));
-            this.panel1.Controls.Add(this.bntBebidas);
-            this.panel1.Controls.Add(this.btnAcompanhamentos);
-            this.panel1.Controls.Add(this.btnLanches);
-            this.panel1.Controls.Add(this.btnSair);
-            this.panel1.Controls.Add(this.btnNovoPedido);
-            this.panel1.Controls.Add(this.PictureBox);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(240, 613);
-            this.panel1.TabIndex = 44;
+            this.pnlSidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(39)))), ((int)(((byte)(35)))));
+            this.pnlSidebar.Controls.Add(this.bntBebidas);
+            this.pnlSidebar.Controls.Add(this.btnAcompanhamentos);
+            this.pnlSidebar.Controls.Add(this.btnLanches);
+            this.pnlSidebar.Controls.Add(this.btnSair);
+            this.pnlSidebar.Controls.Add(this.btnNovoPedido);
+            this.pnlSidebar.Controls.Add(this.ptcrBoxLogo);
+            this.pnlSidebar.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnlSidebar.Location = new System.Drawing.Point(0, 0);
+            this.pnlSidebar.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlSidebar.Name = "pnlSidebar";
+            this.pnlSidebar.Size = new System.Drawing.Size(240, 613);
+            this.pnlSidebar.TabIndex = 44;
             // 
             // bntBebidas
             // 
@@ -652,24 +638,23 @@
             this.btnNovoPedido.UseVisualStyleBackColor = false;
             this.btnNovoPedido.Click += new System.EventHandler(this.btnNovoPedido_Click);
             // 
-            // PictureBox
+            // ptcrBoxLogo
             // 
-            this.PictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.PictureBox.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox.Image")));
-            this.PictureBox.Location = new System.Drawing.Point(57, 20);
-            this.PictureBox.Name = "PictureBox";
-            this.PictureBox.Size = new System.Drawing.Size(120, 123);
-            this.PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PictureBox.TabIndex = 56;
-            this.PictureBox.TabStop = false;
+            this.ptcrBoxLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ptcrBoxLogo.Image = ((System.Drawing.Image)(resources.GetObject("ptcrBoxLogo.Image")));
+            this.ptcrBoxLogo.Location = new System.Drawing.Point(57, 20);
+            this.ptcrBoxLogo.Name = "ptcrBoxLogo";
+            this.ptcrBoxLogo.Size = new System.Drawing.Size(120, 123);
+            this.ptcrBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptcrBoxLogo.TabIndex = 56;
+            this.ptcrBoxLogo.TabStop = false;
             // 
             // grpAdicionar
             // 
             this.grpAdicionar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(51)))), ((int)(((byte)(45)))));
             this.grpAdicionar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.grpAdicionar.CausesValidation = false;
-            this.grpAdicionar.Controls.Add(this.label6);
-            this.grpAdicionar.Controls.Add(this.label2);
+            this.grpAdicionar.Controls.Add(this.lblAdicionais);
             this.grpAdicionar.Controls.Add(this.chkMaionese);
             this.grpAdicionar.Controls.Add(this.chkBacon);
             this.grpAdicionar.Controls.Add(this.chkMolhoEspecial);
@@ -688,28 +673,17 @@
             this.grpAdicionar.TabIndex = 43;
             this.grpAdicionar.TabStop = false;
             // 
-            // label6
+            // lblAdicionais
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(203, 0);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(0, 20);
-            this.label6.TabIndex = 38;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(-4, 3);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(413, 20);
-            this.label2.TabIndex = 35;
-            this.label2.Text = " Adicionais                                                                      " +
+            this.lblAdicionais.AutoSize = true;
+            this.lblAdicionais.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAdicionais.ForeColor = System.Drawing.Color.White;
+            this.lblAdicionais.Location = new System.Drawing.Point(-4, 3);
+            this.lblAdicionais.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblAdicionais.Name = "lblAdicionais";
+            this.lblAdicionais.Size = new System.Drawing.Size(413, 20);
+            this.lblAdicionais.TabIndex = 35;
+            this.lblAdicionais.Text = " Adicionais                                                                      " +
     "            ";
             // 
             // chkMaionese
@@ -802,12 +776,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(35)))), ((int)(((byte)(25)))));
             this.ClientSize = new System.Drawing.Size(1054, 613);
-            this.Controls.Add(this.panel5);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pnlResumo);
+            this.Controls.Add(this.pnlBebidas);
+            this.Controls.Add(this.pnlAcompanhamentos);
+            this.Controls.Add(this.pnlLanche);
+            this.Controls.Add(this.lblNovoPedido);
+            this.Controls.Add(this.pnlSidebar);
             this.Controls.Add(this.grpAdicionar);
             this.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -815,18 +789,18 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pedido";
             this.Load += new System.EventHandler(this.Pedido_Load);
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
+            this.pnlResumo.ResumeLayout(false);
+            this.pnlResumo.PerformLayout();
             this.grpRetirar.ResumeLayout(false);
             this.grpRetirar.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox)).EndInit();
+            this.pnlBebidas.ResumeLayout(false);
+            this.pnlBebidas.PerformLayout();
+            this.pnlAcompanhamentos.ResumeLayout(false);
+            this.pnlAcompanhamentos.PerformLayout();
+            this.pnlLanche.ResumeLayout(false);
+            this.pnlLanche.PerformLayout();
+            this.pnlSidebar.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ptcrBoxLogo)).EndInit();
             this.grpAdicionar.ResumeLayout(false);
             this.grpAdicionar.PerformLayout();
             this.ResumeLayout(false);
@@ -836,7 +810,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel pnlResumo;
         private System.Windows.Forms.Label lblValorAcompanhamentos;
         private System.Windows.Forms.Label lblVAcompanhamentos;
         public System.Windows.Forms.Label lblValorLanche;
@@ -846,7 +820,6 @@
         private System.Windows.Forms.Label lblVBebida;
         private System.Windows.Forms.GroupBox grpRetirar;
         private System.Windows.Forms.CheckBox chkFrango;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.CheckBox chkMolho;
         private System.Windows.Forms.CheckBox chkQueijo;
         private System.Windows.Forms.CheckBox chkSalada;
@@ -860,21 +833,20 @@
         private System.Windows.Forms.Label lblVLanche;
         private System.Windows.Forms.Label lblResumo;
         private System.Windows.Forms.Label lblValorPagar;
-        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel pnlBebidas;
         private System.Windows.Forms.ComboBox cmbBebidas;
         private System.Windows.Forms.Label lblBebidas;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel pnlAcompanhamentos;
         private System.Windows.Forms.ComboBox cmbAcompanhamentos;
         private System.Windows.Forms.Label lblAcompanhamentos;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel pnlLanche;
         private System.Windows.Forms.ComboBox cmbLanches;
         private System.Windows.Forms.Label lblLanches;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox PictureBox;
+        private System.Windows.Forms.Label lblNovoPedido;
+        private System.Windows.Forms.Panel pnlSidebar;
+        private System.Windows.Forms.PictureBox ptcrBoxLogo;
         private System.Windows.Forms.GroupBox grpAdicionar;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblAdicionais;
         private System.Windows.Forms.CheckBox chkMaionese;
         private System.Windows.Forms.CheckBox chkBacon;
         private System.Windows.Forms.CheckBox chkMolhoEspecial;

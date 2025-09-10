@@ -398,7 +398,7 @@ namespace SistemaHamburgueria
 
         private void button3_MouseHover(object sender, EventArgs e)
         {
-            btnAcompanhamentos.BackColor = ColorTranslator.FromHtml("#3E2723");
+            btnAcompanhamentos.BackColor = ColorTranslator.FromHtml("#F5E8C8");
             btnAcompanhamentos.ForeColor = Color.Black;
         }
 
@@ -410,7 +410,7 @@ namespace SistemaHamburgueria
 
         private void bntBebidas_MouseLeave(object sender, EventArgs e)
         {
-            bntBebidas.BackColor = ColorTranslator.FromHtml("#F5E8C8");
+            bntBebidas.BackColor = ColorTranslator.FromHtml("#3E2723");
             bntBebidas.ForeColor = ColorTranslator.FromHtml("#F5E8C8");
         }
     }
