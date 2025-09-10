@@ -37,5 +37,10 @@ namespace SistemaHamburgueria
             }
 
         }
+
+        private void Funcionario_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -28,299 +28,550 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pnlLanche1 = new System.Windows.Forms.Panel();
-            this.descLanche1 = new System.Windows.Forms.Label();
-            this.lblLanche1 = new System.Windows.Forms.Label();
-            this.ptcrLanche1 = new System.Windows.Forms.PictureBox();
-            this.lblCardapio = new System.Windows.Forms.Label();
-            this.pnlLanche2 = new System.Windows.Forms.Panel();
-            this.descLanche2 = new System.Windows.Forms.Label();
-            this.lblLanche2 = new System.Windows.Forms.Label();
-            this.ptcrLanche2 = new System.Windows.Forms.PictureBox();
-            this.ptcrLanche3 = new System.Windows.Forms.PictureBox();
-            this.lblLanche3 = new System.Windows.Forms.Label();
-            this.descLanche3 = new System.Windows.Forms.Label();
-            this.pnlLanche3 = new System.Windows.Forms.Panel();
-            this.pnlLanche4 = new System.Windows.Forms.Panel();
-            this.descLanche4 = new System.Windows.Forms.Label();
-            this.lblLanche4 = new System.Windows.Forms.Label();
-            this.ptcrLanche4 = new System.Windows.Forms.PictureBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.PictureBox = new System.Windows.Forms.PictureBox();
+            this.bntBebidas = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.btnLanches = new System.Windows.Forms.Button();
+            this.btnSair = new System.Windows.Forms.Button();
+            this.btnNovoPedido = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.pnlLanche6 = new System.Windows.Forms.Panel();
+            this.ptcrLanche6 = new System.Windows.Forms.PictureBox();
+            this.descLanche6 = new System.Windows.Forms.Label();
+            this.lblLanche6 = new System.Windows.Forms.Label();
             this.pnlLanche5 = new System.Windows.Forms.Panel();
             this.descLanche5 = new System.Windows.Forms.Label();
             this.lblLanche5 = new System.Windows.Forms.Label();
             this.ptcrLanche5 = new System.Windows.Forms.PictureBox();
-            this.pnlLanche6 = new System.Windows.Forms.Panel();
-            this.descLanche6 = new System.Windows.Forms.Label();
-            this.lblLanche6 = new System.Windows.Forms.Label();
-            this.ptcrLanche6 = new System.Windows.Forms.PictureBox();
-            this.btnSair = new System.Windows.Forms.Button();
-            this.btnNovoPedido = new System.Windows.Forms.Button();
-            this.pnlLanche1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptcrLanche1)).BeginInit();
-            this.pnlLanche2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptcrLanche2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptcrLanche3)).BeginInit();
-            this.pnlLanche3.SuspendLayout();
-            this.pnlLanche4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptcrLanche4)).BeginInit();
-            this.pnlLanche5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptcrLanche5)).BeginInit();
+            this.pnlLanche4 = new System.Windows.Forms.Panel();
+            this.ptcrLanche4 = new System.Windows.Forms.PictureBox();
+            this.descLanche4 = new System.Windows.Forms.Label();
+            this.lblLanche4 = new System.Windows.Forms.Label();
+            this.pnlLanche3 = new System.Windows.Forms.Panel();
+            this.ptcrLanche3 = new System.Windows.Forms.PictureBox();
+            this.descLanche3 = new System.Windows.Forms.Label();
+            this.lblLanche3 = new System.Windows.Forms.Label();
+            this.pnlLanche2 = new System.Windows.Forms.Panel();
+            this.descLanche2 = new System.Windows.Forms.Label();
+            this.lblLanche2 = new System.Windows.Forms.Label();
+            this.ptcrLanche2 = new System.Windows.Forms.PictureBox();
+            this.lblCardapio = new System.Windows.Forms.Label();
+            this.pnlLanche1 = new System.Windows.Forms.Panel();
+            this.descLanche1 = new System.Windows.Forms.Label();
+            this.lblLanche1 = new System.Windows.Forms.Label();
+            this.ptcrLanche1 = new System.Windows.Forms.PictureBox();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox)).BeginInit();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.pnlLanche6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptcrLanche6)).BeginInit();
+            this.pnlLanche5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptcrLanche5)).BeginInit();
+            this.pnlLanche4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptcrLanche4)).BeginInit();
+            this.pnlLanche3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptcrLanche3)).BeginInit();
+            this.pnlLanche2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptcrLanche2)).BeginInit();
+            this.pnlLanche1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptcrLanche1)).BeginInit();
             this.SuspendLayout();
             // 
-            // pnlLanche1
+            // panel2
             // 
-            this.pnlLanche1.Controls.Add(this.descLanche1);
-            this.pnlLanche1.Controls.Add(this.lblLanche1);
-            this.pnlLanche1.Controls.Add(this.ptcrLanche1);
-            this.pnlLanche1.Location = new System.Drawing.Point(61, 62);
-            this.pnlLanche1.Name = "pnlLanche1";
-            this.pnlLanche1.Size = new System.Drawing.Size(199, 131);
-            this.pnlLanche1.TabIndex = 0;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(26)))), ((int)(((byte)(20)))));
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel2.Location = new System.Drawing.Point(952, 288);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(238, 153);
+            this.panel2.TabIndex = 48;
             // 
-            // descLanche1
+            // pictureBox1
             // 
-            this.descLanche1.AutoSize = true;
-            this.descLanche1.Location = new System.Drawing.Point(110, 48);
-            this.descLanche1.Name = "descLanche1";
-            this.descLanche1.Size = new System.Drawing.Size(53, 13);
-            this.descLanche1.TabIndex = 29;
-            this.descLanche1.Text = "descricao";
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(17, 28);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(87, 87);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 31;
+            this.pictureBox1.TabStop = false;
             // 
-            // lblLanche1
+            // label1
             // 
-            this.lblLanche1.AutoSize = true;
-            this.lblLanche1.Location = new System.Drawing.Point(110, 18);
-            this.lblLanche1.Name = "lblLanche1";
-            this.lblLanche1.Size = new System.Drawing.Size(49, 13);
-            this.lblLanche1.TabIndex = 28;
-            this.lblLanche1.Text = "Cardapio";
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(232)))), ((int)(((byte)(200)))));
+            this.label1.Location = new System.Drawing.Point(110, 28);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(94, 102);
+            this.label1.TabIndex = 29;
+            this.label1.Text = "R$ 40,00\r\nHamburguer \r\nbovinos 160g,\r\ncheddar,\r\ndoritos e \r\nketchup\r\n";
             // 
-            // ptcrLanche1
+            // label2
             // 
-            this.ptcrLanche1.Location = new System.Drawing.Point(17, 18);
-            this.ptcrLanche1.Name = "ptcrLanche1";
-            this.ptcrLanche1.Size = new System.Drawing.Size(74, 87);
-            this.ptcrLanche1.TabIndex = 0;
-            this.ptcrLanche1.TabStop = false;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(232)))), ((int)(((byte)(200)))));
+            this.label2.Location = new System.Drawing.Point(109, 4);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(124, 21);
+            this.label2.TabIndex = 28;
+            this.label2.Text = "TexMex Burger";
             // 
-            // lblCardapio
+            // panel1
             // 
-            this.lblCardapio.AutoSize = true;
-            this.lblCardapio.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCardapio.Location = new System.Drawing.Point(327, 9);
-            this.lblCardapio.Name = "lblCardapio";
-            this.lblCardapio.Size = new System.Drawing.Size(114, 24);
-            this.lblCardapio.TabIndex = 27;
-            this.lblCardapio.Text = "CARDAPIO";
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(39)))), ((int)(((byte)(35)))));
+            this.panel1.Controls.Add(this.PictureBox);
+            this.panel1.Controls.Add(this.bntBebidas);
+            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.btnLanches);
+            this.panel1.Controls.Add(this.btnSair);
+            this.panel1.Controls.Add(this.btnNovoPedido);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(205, 488);
+            this.panel1.TabIndex = 49;
             // 
-            // pnlLanche2
+            // PictureBox
             // 
-            this.pnlLanche2.Controls.Add(this.descLanche2);
-            this.pnlLanche2.Controls.Add(this.lblLanche2);
-            this.pnlLanche2.Controls.Add(this.ptcrLanche2);
-            this.pnlLanche2.Location = new System.Drawing.Point(314, 62);
-            this.pnlLanche2.Name = "pnlLanche2";
-            this.pnlLanche2.Size = new System.Drawing.Size(199, 131);
-            this.pnlLanche2.TabIndex = 30;
+            this.PictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.PictureBox.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox.Image")));
+            this.PictureBox.Location = new System.Drawing.Point(37, 16);
+            this.PictureBox.Name = "PictureBox";
+            this.PictureBox.Size = new System.Drawing.Size(120, 123);
+            this.PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PictureBox.TabIndex = 43;
+            this.PictureBox.TabStop = false;
             // 
-            // descLanche2
+            // bntBebidas
             // 
-            this.descLanche2.AutoSize = true;
-            this.descLanche2.Location = new System.Drawing.Point(110, 48);
-            this.descLanche2.Name = "descLanche2";
-            this.descLanche2.Size = new System.Drawing.Size(53, 13);
-            this.descLanche2.TabIndex = 29;
-            this.descLanche2.Text = "descricao";
+            this.bntBebidas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(39)))), ((int)(((byte)(35)))));
+            this.bntBebidas.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bntBebidas.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bntBebidas.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bntBebidas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(232)))), ((int)(((byte)(200)))));
+            this.bntBebidas.Location = new System.Drawing.Point(-14, 255);
+            this.bntBebidas.Name = "bntBebidas";
+            this.bntBebidas.Size = new System.Drawing.Size(219, 31);
+            this.bntBebidas.TabIndex = 42;
+            this.bntBebidas.Text = "       🥤 Bebidas                             ";
+            this.bntBebidas.UseVisualStyleBackColor = false;
             // 
-            // lblLanche2
+            // button3
             // 
-            this.lblLanche2.AutoSize = true;
-            this.lblLanche2.Location = new System.Drawing.Point(110, 18);
-            this.lblLanche2.Name = "lblLanche2";
-            this.lblLanche2.Size = new System.Drawing.Size(49, 13);
-            this.lblLanche2.TabIndex = 28;
-            this.lblLanche2.Text = "Cardapio";
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(232)))), ((int)(((byte)(200)))));
+            this.button3.Location = new System.Drawing.Point(-14, 207);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(219, 32);
+            this.button3.TabIndex = 41;
+            this.button3.Text = "      🍟  Acompanhamentos                                 ";
+            this.button3.UseVisualStyleBackColor = false;
             // 
-            // ptcrLanche2
+            // btnLanches
             // 
-            this.ptcrLanche2.Location = new System.Drawing.Point(17, 18);
-            this.ptcrLanche2.Name = "ptcrLanche2";
-            this.ptcrLanche2.Size = new System.Drawing.Size(74, 87);
-            this.ptcrLanche2.TabIndex = 0;
-            this.ptcrLanche2.TabStop = false;
+            this.btnLanches.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(39)))), ((int)(((byte)(35)))));
+            this.btnLanches.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLanches.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(232)))), ((int)(((byte)(200)))));
+            this.btnLanches.FlatAppearance.BorderSize = 0;
+            this.btnLanches.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnLanches.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLanches.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(232)))), ((int)(((byte)(200)))));
+            this.btnLanches.Location = new System.Drawing.Point(-14, 158);
+            this.btnLanches.Name = "btnLanches";
+            this.btnLanches.Size = new System.Drawing.Size(219, 31);
+            this.btnLanches.TabIndex = 40;
+            this.btnLanches.Text = "       🍔 Lanches                                 ";
+            this.btnLanches.UseVisualStyleBackColor = false;
             // 
-            // ptcrLanche3
+            // btnSair
             // 
-            this.ptcrLanche3.Location = new System.Drawing.Point(17, 18);
-            this.ptcrLanche3.Name = "ptcrLanche3";
-            this.ptcrLanche3.Size = new System.Drawing.Size(74, 87);
-            this.ptcrLanche3.TabIndex = 0;
-            this.ptcrLanche3.TabStop = false;
+            this.btnSair.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(74)))), ((int)(((byte)(74)))));
+            this.btnSair.FlatAppearance.BorderSize = 0;
+            this.btnSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSair.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSair.ForeColor = System.Drawing.Color.White;
+            this.btnSair.Location = new System.Drawing.Point(24, 374);
+            this.btnSair.Name = "btnSair";
+            this.btnSair.Size = new System.Drawing.Size(147, 28);
+            this.btnSair.TabIndex = 34;
+            this.btnSair.Text = "Sair";
+            this.btnSair.UseVisualStyleBackColor = false;
             // 
-            // lblLanche3
+            // btnNovoPedido
             // 
-            this.lblLanche3.AutoSize = true;
-            this.lblLanche3.Location = new System.Drawing.Point(110, 18);
-            this.lblLanche3.Name = "lblLanche3";
-            this.lblLanche3.Size = new System.Drawing.Size(49, 13);
-            this.lblLanche3.TabIndex = 28;
-            this.lblLanche3.Text = "Cardapio";
+            this.btnNovoPedido.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(163)))), ((int)(((byte)(90)))));
+            this.btnNovoPedido.FlatAppearance.BorderSize = 0;
+            this.btnNovoPedido.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNovoPedido.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNovoPedido.ForeColor = System.Drawing.Color.White;
+            this.btnNovoPedido.Location = new System.Drawing.Point(24, 317);
+            this.btnNovoPedido.Name = "btnNovoPedido";
+            this.btnNovoPedido.Size = new System.Drawing.Size(147, 31);
+            this.btnNovoPedido.TabIndex = 35;
+            this.btnNovoPedido.Text = "✓  Fazer Pedido";
+            this.btnNovoPedido.UseVisualStyleBackColor = false;
             // 
-            // descLanche3
+            // panel3
             // 
-            this.descLanche3.AutoSize = true;
-            this.descLanche3.Location = new System.Drawing.Point(110, 48);
-            this.descLanche3.Name = "descLanche3";
-            this.descLanche3.Size = new System.Drawing.Size(53, 13);
-            this.descLanche3.TabIndex = 29;
-            this.descLanche3.Text = "descricao";
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(26)))), ((int)(((byte)(20)))));
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.pictureBox2);
+            this.panel3.Controls.Add(this.label3);
+            this.panel3.Controls.Add(this.label4);
+            this.panel3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel3.Location = new System.Drawing.Point(952, 99);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(234, 153);
+            this.panel3.TabIndex = 47;
             // 
-            // pnlLanche3
+            // pictureBox2
             // 
-            this.pnlLanche3.Controls.Add(this.descLanche3);
-            this.pnlLanche3.Controls.Add(this.lblLanche3);
-            this.pnlLanche3.Controls.Add(this.ptcrLanche3);
-            this.pnlLanche3.Location = new System.Drawing.Point(551, 62);
-            this.pnlLanche3.Name = "pnlLanche3";
-            this.pnlLanche3.Size = new System.Drawing.Size(199, 131);
-            this.pnlLanche3.TabIndex = 31;
+            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(17, 30);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(87, 87);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 30;
+            this.pictureBox2.TabStop = false;
             // 
-            // pnlLanche4
+            // label3
             // 
-            this.pnlLanche4.Controls.Add(this.descLanche4);
-            this.pnlLanche4.Controls.Add(this.lblLanche4);
-            this.pnlLanche4.Controls.Add(this.ptcrLanche4);
-            this.pnlLanche4.Location = new System.Drawing.Point(61, 226);
-            this.pnlLanche4.Name = "pnlLanche4";
-            this.pnlLanche4.Size = new System.Drawing.Size(199, 131);
-            this.pnlLanche4.TabIndex = 32;
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(232)))), ((int)(((byte)(200)))));
+            this.label3.Location = new System.Drawing.Point(119, 22);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(101, 102);
+            this.label3.TabIndex = 29;
+            this.label3.Text = "R$ 45,00\r\nHamburguer \r\nbovino 160g,\r\nbacon,cheddar,\r\nmolho BBQ e\r\ncrispy onions\r\n" +
+    "";
             // 
-            // descLanche4
+            // label4
             // 
-            this.descLanche4.AutoSize = true;
-            this.descLanche4.Location = new System.Drawing.Point(110, 48);
-            this.descLanche4.Name = "descLanche4";
-            this.descLanche4.Size = new System.Drawing.Size(53, 13);
-            this.descLanche4.TabIndex = 29;
-            this.descLanche4.Text = "descricao";
-            // 
-            // lblLanche4
-            // 
-            this.lblLanche4.AutoSize = true;
-            this.lblLanche4.Location = new System.Drawing.Point(110, 18);
-            this.lblLanche4.Name = "lblLanche4";
-            this.lblLanche4.Size = new System.Drawing.Size(49, 13);
-            this.lblLanche4.TabIndex = 28;
-            this.lblLanche4.Text = "Cardapio";
-            // 
-            // ptcrLanche4
-            // 
-            this.ptcrLanche4.Location = new System.Drawing.Point(17, 18);
-            this.ptcrLanche4.Name = "ptcrLanche4";
-            this.ptcrLanche4.Size = new System.Drawing.Size(74, 87);
-            this.ptcrLanche4.TabIndex = 0;
-            this.ptcrLanche4.TabStop = false;
-            // 
-            // pnlLanche5
-            // 
-            this.pnlLanche5.Controls.Add(this.descLanche5);
-            this.pnlLanche5.Controls.Add(this.lblLanche5);
-            this.pnlLanche5.Controls.Add(this.ptcrLanche5);
-            this.pnlLanche5.Location = new System.Drawing.Point(314, 226);
-            this.pnlLanche5.Name = "pnlLanche5";
-            this.pnlLanche5.Size = new System.Drawing.Size(199, 131);
-            this.pnlLanche5.TabIndex = 32;
-            // 
-            // descLanche5
-            // 
-            this.descLanche5.AutoSize = true;
-            this.descLanche5.Location = new System.Drawing.Point(110, 48);
-            this.descLanche5.Name = "descLanche5";
-            this.descLanche5.Size = new System.Drawing.Size(53, 13);
-            this.descLanche5.TabIndex = 29;
-            this.descLanche5.Text = "descricao";
-            // 
-            // lblLanche5
-            // 
-            this.lblLanche5.AutoSize = true;
-            this.lblLanche5.Location = new System.Drawing.Point(110, 18);
-            this.lblLanche5.Name = "lblLanche5";
-            this.lblLanche5.Size = new System.Drawing.Size(49, 13);
-            this.lblLanche5.TabIndex = 28;
-            this.lblLanche5.Text = "Cardapio";
-            // 
-            // ptcrLanche5
-            // 
-            this.ptcrLanche5.Location = new System.Drawing.Point(17, 18);
-            this.ptcrLanche5.Name = "ptcrLanche5";
-            this.ptcrLanche5.Size = new System.Drawing.Size(74, 87);
-            this.ptcrLanche5.TabIndex = 0;
-            this.ptcrLanche5.TabStop = false;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(232)))), ((int)(((byte)(200)))));
+            this.label4.Location = new System.Drawing.Point(111, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(97, 21);
+            this.label4.TabIndex = 28;
+            this.label4.Text = "BBQ Bacon ";
             // 
             // pnlLanche6
             // 
+            this.pnlLanche6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(26)))), ((int)(((byte)(20)))));
+            this.pnlLanche6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlLanche6.Controls.Add(this.ptcrLanche6);
             this.pnlLanche6.Controls.Add(this.descLanche6);
             this.pnlLanche6.Controls.Add(this.lblLanche6);
-            this.pnlLanche6.Controls.Add(this.ptcrLanche6);
-            this.pnlLanche6.Location = new System.Drawing.Point(551, 226);
+            this.pnlLanche6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pnlLanche6.Location = new System.Drawing.Point(716, 288);
             this.pnlLanche6.Name = "pnlLanche6";
-            this.pnlLanche6.Size = new System.Drawing.Size(199, 131);
-            this.pnlLanche6.TabIndex = 33;
+            this.pnlLanche6.Size = new System.Drawing.Size(218, 153);
+            this.pnlLanche6.TabIndex = 46;
+            // 
+            // ptcrLanche6
+            // 
+            this.ptcrLanche6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ptcrLanche6.Image = ((System.Drawing.Image)(resources.GetObject("ptcrLanche6.Image")));
+            this.ptcrLanche6.Location = new System.Drawing.Point(6, 28);
+            this.ptcrLanche6.Name = "ptcrLanche6";
+            this.ptcrLanche6.Size = new System.Drawing.Size(87, 87);
+            this.ptcrLanche6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptcrLanche6.TabIndex = 31;
+            this.ptcrLanche6.TabStop = false;
             // 
             // descLanche6
             // 
             this.descLanche6.AutoSize = true;
-            this.descLanche6.Location = new System.Drawing.Point(110, 48);
+            this.descLanche6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(232)))), ((int)(((byte)(200)))));
+            this.descLanche6.Location = new System.Drawing.Point(102, 28);
             this.descLanche6.Name = "descLanche6";
-            this.descLanche6.Size = new System.Drawing.Size(53, 13);
+            this.descLanche6.Size = new System.Drawing.Size(115, 102);
             this.descLanche6.TabIndex = 29;
-            this.descLanche6.Text = "descricao";
+            this.descLanche6.Text = "R$ 45,00\r\nDois Hambur-\r\ngueres bovinos\r\n160g, bacon,\r\nsalada,cheddar e \r\nmaionese" +
+    "\r\n";
             // 
             // lblLanche6
             // 
             this.lblLanche6.AutoSize = true;
-            this.lblLanche6.Location = new System.Drawing.Point(110, 18);
+            this.lblLanche6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLanche6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(232)))), ((int)(((byte)(200)))));
+            this.lblLanche6.Location = new System.Drawing.Point(88, 4);
             this.lblLanche6.Name = "lblLanche6";
-            this.lblLanche6.Size = new System.Drawing.Size(49, 13);
+            this.lblLanche6.Size = new System.Drawing.Size(125, 21);
             this.lblLanche6.TabIndex = 28;
-            this.lblLanche6.Text = "Cardapio";
+            this.lblLanche6.Text = "Duplo Cheddar";
             // 
-            // ptcrLanche6
+            // pnlLanche5
             // 
-            this.ptcrLanche6.Location = new System.Drawing.Point(17, 18);
-            this.ptcrLanche6.Name = "ptcrLanche6";
-            this.ptcrLanche6.Size = new System.Drawing.Size(74, 87);
-            this.ptcrLanche6.TabIndex = 0;
-            this.ptcrLanche6.TabStop = false;
+            this.pnlLanche5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(26)))), ((int)(((byte)(20)))));
+            this.pnlLanche5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlLanche5.Controls.Add(this.descLanche5);
+            this.pnlLanche5.Controls.Add(this.lblLanche5);
+            this.pnlLanche5.Controls.Add(this.ptcrLanche5);
+            this.pnlLanche5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pnlLanche5.Location = new System.Drawing.Point(462, 288);
+            this.pnlLanche5.Name = "pnlLanche5";
+            this.pnlLanche5.Size = new System.Drawing.Size(238, 153);
+            this.pnlLanche5.TabIndex = 44;
             // 
-            // btnSair
+            // descLanche5
             // 
-            this.btnSair.Location = new System.Drawing.Point(427, 380);
-            this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(112, 40);
-            this.btnSair.TabIndex = 34;
-            this.btnSair.Text = "Sair";
-            this.btnSair.UseVisualStyleBackColor = true;
-            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
+            this.descLanche5.AutoSize = true;
+            this.descLanche5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(232)))), ((int)(((byte)(200)))));
+            this.descLanche5.Location = new System.Drawing.Point(122, 28);
+            this.descLanche5.Name = "descLanche5";
+            this.descLanche5.Size = new System.Drawing.Size(92, 102);
+            this.descLanche5.TabIndex = 29;
+            this.descLanche5.Text = "R$ 30,00\r\nHamburguer \r\nbovino 160g,\r\nbacon,salada,\r\ncheddar e \r\nmaionese\r\n";
             // 
-            // btnNovoPedido
+            // lblLanche5
             // 
-            this.btnNovoPedido.Location = new System.Drawing.Point(258, 380);
-            this.btnNovoPedido.Name = "btnNovoPedido";
-            this.btnNovoPedido.Size = new System.Drawing.Size(112, 40);
-            this.btnNovoPedido.TabIndex = 35;
-            this.btnNovoPedido.Text = "Novo Pedido";
-            this.btnNovoPedido.UseVisualStyleBackColor = true;
+            this.lblLanche5.AutoSize = true;
+            this.lblLanche5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLanche5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(232)))), ((int)(((byte)(200)))));
+            this.lblLanche5.Location = new System.Drawing.Point(121, 0);
+            this.lblLanche5.Name = "lblLanche5";
+            this.lblLanche5.Size = new System.Drawing.Size(77, 21);
+            this.lblLanche5.TabIndex = 28;
+            this.lblLanche5.Text = "X-Salada";
+            // 
+            // ptcrLanche5
+            // 
+            this.ptcrLanche5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ptcrLanche5.Image = ((System.Drawing.Image)(resources.GetObject("ptcrLanche5.Image")));
+            this.ptcrLanche5.Location = new System.Drawing.Point(12, 28);
+            this.ptcrLanche5.Name = "ptcrLanche5";
+            this.ptcrLanche5.Size = new System.Drawing.Size(87, 87);
+            this.ptcrLanche5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptcrLanche5.TabIndex = 0;
+            this.ptcrLanche5.TabStop = false;
+            // 
+            // pnlLanche4
+            // 
+            this.pnlLanche4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(26)))), ((int)(((byte)(20)))));
+            this.pnlLanche4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlLanche4.Controls.Add(this.ptcrLanche4);
+            this.pnlLanche4.Controls.Add(this.descLanche4);
+            this.pnlLanche4.Controls.Add(this.lblLanche4);
+            this.pnlLanche4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pnlLanche4.Location = new System.Drawing.Point(230, 288);
+            this.pnlLanche4.Name = "pnlLanche4";
+            this.pnlLanche4.Size = new System.Drawing.Size(213, 153);
+            this.pnlLanche4.TabIndex = 45;
+            // 
+            // ptcrLanche4
+            // 
+            this.ptcrLanche4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ptcrLanche4.Image = ((System.Drawing.Image)(resources.GetObject("ptcrLanche4.Image")));
+            this.ptcrLanche4.Location = new System.Drawing.Point(13, 28);
+            this.ptcrLanche4.Name = "ptcrLanche4";
+            this.ptcrLanche4.Size = new System.Drawing.Size(87, 87);
+            this.ptcrLanche4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptcrLanche4.TabIndex = 30;
+            this.ptcrLanche4.TabStop = false;
+            // 
+            // descLanche4
+            // 
+            this.descLanche4.AutoSize = true;
+            this.descLanche4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(232)))), ((int)(((byte)(200)))));
+            this.descLanche4.Location = new System.Drawing.Point(105, 28);
+            this.descLanche4.Name = "descLanche4";
+            this.descLanche4.Size = new System.Drawing.Size(102, 119);
+            this.descLanche4.TabIndex = 29;
+            this.descLanche4.Text = "R$23,00\r\nDois\r\nHamburgueres\r\nempanados de \r\nfrango 120g,\r\nsalada e maio-\r\nnese\r\n";
+            // 
+            // lblLanche4
+            // 
+            this.lblLanche4.AutoSize = true;
+            this.lblLanche4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLanche4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(232)))), ((int)(((byte)(200)))));
+            this.lblLanche4.Location = new System.Drawing.Point(89, 0);
+            this.lblLanche4.Name = "lblLanche4";
+            this.lblLanche4.Size = new System.Drawing.Size(118, 42);
+            this.lblLanche4.TabIndex = 28;
+            this.lblLanche4.Text = "Duplo Frango \r\n    ";
+            // 
+            // pnlLanche3
+            // 
+            this.pnlLanche3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(26)))), ((int)(((byte)(20)))));
+            this.pnlLanche3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlLanche3.Controls.Add(this.ptcrLanche3);
+            this.pnlLanche3.Controls.Add(this.descLanche3);
+            this.pnlLanche3.Controls.Add(this.lblLanche3);
+            this.pnlLanche3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pnlLanche3.Location = new System.Drawing.Point(716, 101);
+            this.pnlLanche3.Name = "pnlLanche3";
+            this.pnlLanche3.Size = new System.Drawing.Size(218, 153);
+            this.pnlLanche3.TabIndex = 43;
+            // 
+            // ptcrLanche3
+            // 
+            this.ptcrLanche3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ptcrLanche3.Image = ((System.Drawing.Image)(resources.GetObject("ptcrLanche3.Image")));
+            this.ptcrLanche3.Location = new System.Drawing.Point(12, 28);
+            this.ptcrLanche3.Name = "ptcrLanche3";
+            this.ptcrLanche3.Size = new System.Drawing.Size(87, 87);
+            this.ptcrLanche3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptcrLanche3.TabIndex = 30;
+            this.ptcrLanche3.TabStop = false;
+            // 
+            // descLanche3
+            // 
+            this.descLanche3.AutoSize = true;
+            this.descLanche3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(232)))), ((int)(((byte)(200)))));
+            this.descLanche3.Location = new System.Drawing.Point(105, 28);
+            this.descLanche3.Name = "descLanche3";
+            this.descLanche3.Size = new System.Drawing.Size(98, 102);
+            this.descLanche3.TabIndex = 29;
+            this.descLanche3.Text = "R$20,00\r\nHamburguer\r\nempanado de \r\nfrango 120g,\r\nsalada e maio-\r\nnese";
+            // 
+            // lblLanche3
+            // 
+            this.lblLanche3.AutoSize = true;
+            this.lblLanche3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLanche3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(232)))), ((int)(((byte)(200)))));
+            this.lblLanche3.Location = new System.Drawing.Point(92, 4);
+            this.lblLanche3.Name = "lblLanche3";
+            this.lblLanche3.Size = new System.Drawing.Size(115, 21);
+            this.lblLanche3.TabIndex = 28;
+            this.lblLanche3.Text = "Frango Junior";
+            // 
+            // pnlLanche2
+            // 
+            this.pnlLanche2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(26)))), ((int)(((byte)(20)))));
+            this.pnlLanche2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlLanche2.Controls.Add(this.descLanche2);
+            this.pnlLanche2.Controls.Add(this.lblLanche2);
+            this.pnlLanche2.Controls.Add(this.ptcrLanche2);
+            this.pnlLanche2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pnlLanche2.Location = new System.Drawing.Point(462, 100);
+            this.pnlLanche2.Name = "pnlLanche2";
+            this.pnlLanche2.Size = new System.Drawing.Size(238, 153);
+            this.pnlLanche2.TabIndex = 42;
+            // 
+            // descLanche2
+            // 
+            this.descLanche2.AutoSize = true;
+            this.descLanche2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(232)))), ((int)(((byte)(200)))));
+            this.descLanche2.Location = new System.Drawing.Point(105, 32);
+            this.descLanche2.Name = "descLanche2";
+            this.descLanche2.Size = new System.Drawing.Size(115, 119);
+            this.descLanche2.TabIndex = 29;
+            this.descLanche2.Text = "R$ 60,00\r\nDois Hambur-\r\ngueres bovinos\r\n160g, bacon,\r\nsalada,cheddar e \r\nmaionese" +
+    "\r\n\r\n";
+            // 
+            // lblLanche2
+            // 
+            this.lblLanche2.AutoSize = true;
+            this.lblLanche2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLanche2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(232)))), ((int)(((byte)(200)))));
+            this.lblLanche2.Location = new System.Drawing.Point(104, 5);
+            this.lblLanche2.Name = "lblLanche2";
+            this.lblLanche2.Size = new System.Drawing.Size(112, 21);
+            this.lblLanche2.TabIndex = 28;
+            this.lblLanche2.Text = "Duplo Salada";
+            // 
+            // ptcrLanche2
+            // 
+            this.ptcrLanche2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ptcrLanche2.Image = ((System.Drawing.Image)(resources.GetObject("ptcrLanche2.Image")));
+            this.ptcrLanche2.Location = new System.Drawing.Point(12, 29);
+            this.ptcrLanche2.Name = "ptcrLanche2";
+            this.ptcrLanche2.Size = new System.Drawing.Size(87, 87);
+            this.ptcrLanche2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptcrLanche2.TabIndex = 0;
+            this.ptcrLanche2.TabStop = false;
+            // 
+            // lblCardapio
+            // 
+            this.lblCardapio.AutoSize = true;
+            this.lblCardapio.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCardapio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(232)))), ((int)(((byte)(200)))));
+            this.lblCardapio.Location = new System.Drawing.Point(578, 16);
+            this.lblCardapio.Name = "lblCardapio";
+            this.lblCardapio.Size = new System.Drawing.Size(232, 65);
+            this.lblCardapio.TabIndex = 41;
+            this.lblCardapio.Text = "Cardápio";
+            // 
+            // pnlLanche1
+            // 
+            this.pnlLanche1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(26)))), ((int)(((byte)(20)))));
+            this.pnlLanche1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlLanche1.Controls.Add(this.descLanche1);
+            this.pnlLanche1.Controls.Add(this.lblLanche1);
+            this.pnlLanche1.Controls.Add(this.ptcrLanche1);
+            this.pnlLanche1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pnlLanche1.Location = new System.Drawing.Point(230, 99);
+            this.pnlLanche1.Name = "pnlLanche1";
+            this.pnlLanche1.Size = new System.Drawing.Size(213, 153);
+            this.pnlLanche1.TabIndex = 40;
+            // 
+            // descLanche1
+            // 
+            this.descLanche1.AutoSize = true;
+            this.descLanche1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(232)))), ((int)(((byte)(200)))));
+            this.descLanche1.Location = new System.Drawing.Point(106, 30);
+            this.descLanche1.Name = "descLanche1";
+            this.descLanche1.Size = new System.Drawing.Size(92, 102);
+            this.descLanche1.TabIndex = 29;
+            this.descLanche1.Text = "R$ 48,00\r\nHamburguer \r\nbovino 160g, \r\nbacon,salada\r\ncheddar e \r\nmaionese";
+            // 
+            // lblLanche1
+            // 
+            this.lblLanche1.AutoSize = true;
+            this.lblLanche1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLanche1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(232)))), ((int)(((byte)(200)))));
+            this.lblLanche1.Location = new System.Drawing.Point(105, 9);
+            this.lblLanche1.Name = "lblLanche1";
+            this.lblLanche1.Size = new System.Drawing.Size(73, 21);
+            this.lblLanche1.TabIndex = 28;
+            this.lblLanche1.Text = "X-Bacon";
+            // 
+            // ptcrLanche1
+            // 
+            this.ptcrLanche1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ptcrLanche1.Image = ((System.Drawing.Image)(resources.GetObject("ptcrLanche1.Image")));
+            this.ptcrLanche1.InitialImage = ((System.Drawing.Image)(resources.GetObject("ptcrLanche1.InitialImage")));
+            this.ptcrLanche1.Location = new System.Drawing.Point(13, 30);
+            this.ptcrLanche1.Name = "ptcrLanche1";
+            this.ptcrLanche1.Size = new System.Drawing.Size(87, 87);
+            this.ptcrLanche1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptcrLanche1.TabIndex = 0;
+            this.ptcrLanche1.TabStop = false;
             // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnNovoPedido);
-            this.Controls.Add(this.btnSair);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(35)))), ((int)(((byte)(25)))));
+            this.ClientSize = new System.Drawing.Size(1211, 488);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.pnlLanche6);
             this.Controls.Add(this.pnlLanche5);
             this.Controls.Add(this.pnlLanche4);
@@ -330,24 +581,32 @@
             this.Controls.Add(this.pnlLanche1);
             this.Name = "Menu";
             this.Text = "Menu";
-            this.pnlLanche1.ResumeLayout(false);
-            this.pnlLanche1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptcrLanche1)).EndInit();
-            this.pnlLanche2.ResumeLayout(false);
-            this.pnlLanche2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptcrLanche2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptcrLanche3)).EndInit();
-            this.pnlLanche3.ResumeLayout(false);
-            this.pnlLanche3.PerformLayout();
-            this.pnlLanche4.ResumeLayout(false);
-            this.pnlLanche4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptcrLanche4)).EndInit();
-            this.pnlLanche5.ResumeLayout(false);
-            this.pnlLanche5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptcrLanche5)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.pnlLanche6.ResumeLayout(false);
             this.pnlLanche6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptcrLanche6)).EndInit();
+            this.pnlLanche5.ResumeLayout(false);
+            this.pnlLanche5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptcrLanche5)).EndInit();
+            this.pnlLanche4.ResumeLayout(false);
+            this.pnlLanche4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptcrLanche4)).EndInit();
+            this.pnlLanche3.ResumeLayout(false);
+            this.pnlLanche3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptcrLanche3)).EndInit();
+            this.pnlLanche2.ResumeLayout(false);
+            this.pnlLanche2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptcrLanche2)).EndInit();
+            this.pnlLanche1.ResumeLayout(false);
+            this.pnlLanche1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptcrLanche1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -355,32 +614,45 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel pnlLanche1;
-        private System.Windows.Forms.PictureBox ptcrLanche1;
-        private System.Windows.Forms.Label descLanche1;
-        private System.Windows.Forms.Label lblLanche1;
-        private System.Windows.Forms.Label lblCardapio;
-        private System.Windows.Forms.Panel pnlLanche2;
-        private System.Windows.Forms.Label descLanche2;
-        private System.Windows.Forms.Label lblLanche2;
-        private System.Windows.Forms.PictureBox ptcrLanche2;
-        private System.Windows.Forms.PictureBox ptcrLanche3;
-        private System.Windows.Forms.Label lblLanche3;
-        private System.Windows.Forms.Label descLanche3;
-        private System.Windows.Forms.Panel pnlLanche3;
-        private System.Windows.Forms.Panel pnlLanche4;
-        private System.Windows.Forms.Label descLanche4;
-        private System.Windows.Forms.Label lblLanche4;
-        private System.Windows.Forms.PictureBox ptcrLanche4;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox PictureBox;
+        private System.Windows.Forms.Button bntBebidas;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnLanches;
+        private System.Windows.Forms.Button btnSair;
+        private System.Windows.Forms.Button btnNovoPedido;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Panel pnlLanche6;
+        private System.Windows.Forms.PictureBox ptcrLanche6;
+        private System.Windows.Forms.Label descLanche6;
+        private System.Windows.Forms.Label lblLanche6;
         private System.Windows.Forms.Panel pnlLanche5;
         private System.Windows.Forms.Label descLanche5;
         private System.Windows.Forms.Label lblLanche5;
         private System.Windows.Forms.PictureBox ptcrLanche5;
-        private System.Windows.Forms.Panel pnlLanche6;
-        private System.Windows.Forms.Label descLanche6;
-        private System.Windows.Forms.Label lblLanche6;
-        private System.Windows.Forms.PictureBox ptcrLanche6;
-        private System.Windows.Forms.Button btnSair;
-        private System.Windows.Forms.Button btnNovoPedido;
+        private System.Windows.Forms.Panel pnlLanche4;
+        private System.Windows.Forms.PictureBox ptcrLanche4;
+        private System.Windows.Forms.Label descLanche4;
+        private System.Windows.Forms.Label lblLanche4;
+        private System.Windows.Forms.Panel pnlLanche3;
+        private System.Windows.Forms.PictureBox ptcrLanche3;
+        private System.Windows.Forms.Label descLanche3;
+        private System.Windows.Forms.Label lblLanche3;
+        private System.Windows.Forms.Panel pnlLanche2;
+        private System.Windows.Forms.Label descLanche2;
+        private System.Windows.Forms.Label lblLanche2;
+        private System.Windows.Forms.PictureBox ptcrLanche2;
+        private System.Windows.Forms.Label lblCardapio;
+        private System.Windows.Forms.Panel pnlLanche1;
+        private System.Windows.Forms.Label descLanche1;
+        private System.Windows.Forms.Label lblLanche1;
+        private System.Windows.Forms.PictureBox ptcrLanche1;
     }
 }

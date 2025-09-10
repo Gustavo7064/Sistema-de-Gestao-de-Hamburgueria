@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,29 +21,51 @@ namespace SistemaHamburgueria
 
         private void Pedido_Load(object sender, EventArgs e)
         {
-            cmbLanches.Items.Add("X-SALADA- R$ 30,00");
-            cmbLanches.Items.Add("X-BACON- R$ 48,00");
-            cmbLanches.Items.Add("COMBO DUPLO SALADA- R$70,00");
-            cmbLanches.Items.Add("X-FRANGO JUNIOR- R$20,00");
-            cmbLanches.Items.Add("X-FRANGO MEDIO- R$23,00");
-            cmbLanches.Items.Add("CHEDDAR DUPLO- R$45,00");
-            cmbLanches.Items.Add("X-SALADA- R$ 30,00");
-            cmbAcompanhamentos.Items.Add("Batata Frita P- R$ 20,00");
-            cmbAcompanhamentos.Items.Add("Batata Frita M- R$30,00");
-            cmbAcompanhamentos.Items.Add("Batata Frita G- R$40,00");
-            cmbAcompanhamentos.Items.Add("Nuggets P (4 unidades)- R$8,00");
-            cmbAcompanhamentos.Items.Add("Nuggets M (6 unidades)- R$10,00");
-            cmbAcompanhamentos.Items.Add("Nuggets G (10 unidades)- R$15,00");
-            cmbAcompanhamentos.Items.Add("Onion Rings M - R$15,00");
-            cmbAcompanhamentos.Items.Add("Onion Rings G- R$20,00");
-            cmbBebidas.Items.Add("Coca-cola M- R$ 20,00");
-            cmbBebidas.Items.Add("Coca-cola G- R$30,00");
-            cmbBebidas.Items.Add("Pepsi M- R$40,00");
-            cmbBebidas.Items.Add("Pepsi G- R$8,00");
-            cmbBebidas.Items.Add("Guaraná M- R$10,00");
-            cmbBebidas.Items.Add("Guaraná G- R$15,00");
-            cmbBebidas.Items.Add("Milkshake de Nutella M- R$15,00");
-            cmbBebidas.Items.Add("Milkshake de Nutella G- R$20,00");
+            cmbLanches.Items.Insert(0, "Selecione um lanche...");
+            cmbLanches.SelectedIndex = 0;
+
+            cmbAcompanhamentos.Items.Insert(0, "Selecione um acompanhamento...");
+            cmbAcompanhamentos.SelectedIndex = 0;
+
+            cmbBebidas.Items.Insert(0, "Selecione uma bebida...");
+            cmbBebidas.SelectedIndex = 0;
+
+
+
+            cmbLanches.Items.Add("X-Salada - R$ 30,00");
+            cmbLanches.Items.Add("X-Bacon - R$ 48,00");
+            cmbLanches.Items.Add("Duplo Salada - R$ 60,00");
+            cmbLanches.Items.Add("Frango Junior - R$ 20,00");
+            cmbLanches.Items.Add("Duplo Frango  - R$ 23,00");
+            cmbLanches.Items.Add("Duplo Cheddar - R$ 45,00");
+            cmbLanches.Items.Add("TexMex Burguer - R$ 40,00");
+            cmbLanches.Items.Add("BBQ Bacon- R$ 45,00");
+
+
+            // --- Acompanhamentos ---
+            cmbAcompanhamentos.Items.Add("Batata Frita P - R$ 20,00");
+            cmbAcompanhamentos.Items.Add("Batata Frita M - R$ 30,00");
+            cmbAcompanhamentos.Items.Add("Batata Frita G - R$ 40,00");
+            cmbAcompanhamentos.Items.Add("Nuggets P (4 unidades) - R$ 8,00");
+            cmbAcompanhamentos.Items.Add("Nuggets M (6 unidades) - R$ 10,00");
+            cmbAcompanhamentos.Items.Add("Nuggets G (10 unidades) - R$ 15,00");
+            cmbAcompanhamentos.Items.Add("Onion Rings M - R$ 15,00");
+            cmbAcompanhamentos.Items.Add("Onion Rings G - R$ 20,00");
+
+            // --- Bebidas ---
+            cmbBebidas.Items.Add("Coca-cola M - R$ 8,00");
+            cmbBebidas.Items.Add("Coca-cola G - R$ 15,00");
+            cmbBebidas.Items.Add("Pepsi M - R$ 6,00");
+            cmbBebidas.Items.Add("Pepsi G - R$ 10,00");
+            cmbBebidas.Items.Add("Guaraná M - R$ 8,00");
+            cmbBebidas.Items.Add("Guaraná G - R$ 12,00");
+            cmbBebidas.Items.Add("Milkshake de Nutella M - R$ 15,00");
+            cmbBebidas.Items.Add("Milkshake de Nutella G - R$ 20,00");
+
+            if (cmbLanches.Items.Count > 0) cmbLanches.SelectedIndex = 0;
+            if (cmbAcompanhamentos.Items.Count > 0) cmbAcompanhamentos.SelectedIndex = 0;
+            if (cmbBebidas.Items.Count > 0) cmbBebidas.SelectedIndex = 0;
+            cmbLanches.SelectedIndex = 0;
         }
 
         private void checkBox4_CheckedChanged(object sender, EventArgs e)
@@ -101,57 +124,222 @@ namespace SistemaHamburgueria
 
         }
 
-        private void btnCalcular_Click(object sender, EventArgs e)
+
+        
+
+        private void btnNovoPedido_Click(object sender, EventArgs e)
         {
-            double valorLanche= 0, valorOpcao = 0, valorTotal = 0, valorAcompanhamento = 0;
-            if (cmbLanches.SelectedIndex == 0)
+            Menu telamenu = new Menu();
+            telamenu.Show();
+            this.Hide();
+        }
+
+        private void btnSalvar_Click(object sender, EventArgs e)
+        {
+            //vefificar os campos
+            if (lblValorLanche.Text == "")
             {
-                valorPizza = 30 ;
+                MessageBox.Show("Campo obrigátorio");
+                lblValorLanche.Focus();
             }
-            else if (cmbLanches.SelectedIndex == 1)
+            else if (lblValorOpcionais.Text == "")
             {
-                valorPizza = 48;
+                MessageBox.Show("Campo obrigátorio");
+                lblValorOpcionais.Focus();
             }
-            else if (cmbLanches.SelectedIndex == 2)
+            else if (lblValorAcompanhamentos.Text == "")
             {
-                valorPizza = 20;
+                MessageBox.Show("Campo obrigátorio");
+                lblValorAcompanhamentos.Focus();
             }
-            else if (cmbLanches.SelectedIndex == 3)
+            else if (lblValorBebida.Text == "")
             {
-                valorPizza = 23;
+                MessageBox.Show("Campo obrigátorio");
+                lblValorBebida.Focus();
             }
-            else if (cmbLanches.SelectedIndex == 4)
+            else if (lblValorPagar.Text == "")
             {
-                valorPizza = 50;
-            }
-            else if (cmbLanches.SelectedIndex == 5)
-            {
-                valorPizza = 50;
-            }
-            if (chkBorda.Checked == true)
-            {
-                valorOpcao = valorOpcao + 5;
-            }
-            if (chkTempero.Checked == true)
-            {
-                valorOpcao = valorOpcao + 6;
-            }
-            if (chkCebola.Checked == true)
-            {
-                valorOpcao = valorOpcao + 3;
-            }
-            if (chkCatupiry.Checked == true)
-            {
-                valorOpcao = valorOpcao + 4;
+                MessageBox.Show("Campo obrigátorio");
+                lblValorPagar.Focus();
             }
             else
             {
+                //tratamento de erros
+                try
+                {
+                    //inserindo dados no banco
+                    string sql = "insert into tbPedido(valorLanche,valorOpcao,valorTotal,valorBebida,valorAcompanhamento) values(@vlanche,@vopcao, @total,@vbebida, @vacompanhamentos)";
+                    MySqlCommand cmd = new MySqlCommand(sql, con.ConnectarBD());
+                    cmd.Parameters.Add("@vlanche", MySqlDbType.Text).Value = cmbLanches.Text;
+                    cmd.Parameters.Add("@vopcao", MySqlDbType.Text).Value = lblValorOpcionais.Text;
+                    cmd.Parameters.Add("@total", MySqlDbType.Text).Value = lblValorPagar.Text;
+                    cmd.Parameters.Add("@vbebida", MySqlDbType.Text).Value = cmbBebidas.Text;
+                    cmd.Parameters.Add("@vacompanhamentos", MySqlDbType.Text).Value = cmbAcompanhamentos.Text;
+                    cmd.ExecuteNonQuery();
 
+                    MessageBox.Show("Dados cadastrados com Sucesso !!!");
+                    cmbLanches.Text = "";
+                    cmbBebidas.Text = "";
+                    cmbAcompanhamentos.Text = "";
+                    lblValorLanche.Text = "";
+                    lblValorOpcionais.Text = "";
+                    lblValorPagar.Text = "";
+                    cmbLanches.Focus();
+                    con.DesConnectarBD();
+                }
+                catch (Exception erro)
+                {
+                    MessageBox.Show(erro.Message);
+                }
             }
-            valorTotal = valorPizza + valorOpcao;
-            txtValorPizza.Text = Convert.ToString(valorPizza);
-            txtValorOpcionais.Text = Convert.ToString(valorOpcao);
-            txtValorPagar.Text = Convert.ToString(valorTotal);
+        }
+
+        private void btnCalcular_Click_1(object sender, EventArgs e)
+        {
+            double valorLanche = 0, valorAcompanhamento = 0, valorBebida = 0, valorOpcao = 0, valorTotal = 0;
+
+            //  Lanches 
+            if (cmbLanches.SelectedIndex == 1)
+            {
+                valorLanche = 30; // X-SALADA
+            }
+            else if (cmbLanches.SelectedIndex == 2)
+            {
+                valorLanche = 48; // X-BACON
+            }
+            else if (cmbLanches.SelectedIndex == 3)
+            {
+                valorLanche = 60; // COMBO DUPLO SALADA (corrigido: antes 20)
+            }
+            else if (cmbLanches.SelectedIndex == 4)
+            {
+                valorLanche = 20; // X-FRANGO JUNIOR (corrigido: antes 23)
+            }
+            else if (cmbLanches.SelectedIndex == 5)
+            {
+                valorLanche = 23; // X-FRANGO MEDIO (corrigido: antes 50)
+            }
+            else if (cmbLanches.SelectedIndex == 6)
+            {
+                valorLanche = 45; // CHEDDAR DUPLO (corrigido: antes 50)
+            }
+            else if (cmbLanches.SelectedIndex == 7)
+            {
+                valorLanche = 40; // CHEDDAR DUPLO (corrigido: antes 50)
+            }
+            else if (cmbLanches.SelectedIndex == 8)
+            {
+                valorLanche = 45; // CHEDDAR DUPLO (corrigido: antes 50)
+            }
+
+            // --- Acompanhamentos ---
+            if (cmbAcompanhamentos.SelectedIndex == 1)
+            {
+                valorAcompanhamento = 20;
+            }
+            else if (cmbAcompanhamentos.SelectedIndex == 2)
+            {
+                valorAcompanhamento = 30;
+            }
+            else if (cmbAcompanhamentos.SelectedIndex == 3)
+            {
+                valorAcompanhamento = 40;
+            }
+            else if (cmbAcompanhamentos.SelectedIndex == 4)
+            {
+                valorAcompanhamento = 8;
+            }
+            else if (cmbAcompanhamentos.SelectedIndex == 5)
+            {
+                valorAcompanhamento = 10;
+            }
+            else if (cmbAcompanhamentos.SelectedIndex == 6)
+            {
+                valorAcompanhamento = 15;
+            }
+            else if (cmbAcompanhamentos.SelectedIndex == 7)
+            {
+                valorAcompanhamento = 15;
+            }
+            else if (cmbAcompanhamentos.SelectedIndex == 8)
+            {
+                valorAcompanhamento = 20;
+            }
+
+            // --- Bebidas ---
+            if (cmbBebidas.SelectedIndex == 1)
+            {
+                valorBebida = 8;
+            }
+            else if (cmbBebidas.SelectedIndex == 2)
+            {
+                valorBebida = 15;
+            }
+            else if (cmbBebidas.SelectedIndex == 3)
+            {
+                valorBebida = 6;
+            }
+            else if (cmbBebidas.SelectedIndex == 4)
+            {
+                valorBebida = 10;
+            }
+            else if (cmbBebidas.SelectedIndex == 5)
+            {
+                valorBebida = 8;
+            }
+            else if (cmbBebidas.SelectedIndex == 6)
+            {
+                valorBebida = 12;
+            }
+            else if (cmbBebidas.SelectedIndex == 7)
+            {
+                valorBebida = 15;
+            }
+            else if (cmbBebidas.SelectedIndex == 8)
+            {
+                valorBebida = 20;
+            }
+
+            // --- Opcionais ---
+            if (chkCheddar.Checked == true)
+            {
+                valorOpcao = valorOpcao + 6;
+            }
+            if (chkHabmburguer.Checked == true)
+            {
+                valorOpcao = valorOpcao + 12;
+            }
+            if (chkCatupiryA.Checked == true)
+            {
+                valorOpcao = valorOpcao + 8;
+            }
+            if (chkMolhoEspecial.Checked == true)
+            {
+                valorOpcao = valorOpcao + 3;
+            }
+            if (chkBacon.Checked == true)
+            {
+                valorOpcao = valorOpcao + 5;
+            }
+            if (chkMaionese.Checked == true)
+            {
+                valorOpcao += 3;
+            }
+
+            // --- Total ---
+            valorTotal = valorLanche + valorAcompanhamento + valorBebida + valorOpcao;
+
+            // Exibe os resultados 
+            lblValorLanche.Text = "R$ " + Convert.ToString(valorLanche) + ",00";
+            lblValorAcompanhamentos.Text = "R$ " + Convert.ToString(valorAcompanhamento) + ",00";
+            lblValorOpcionais.Text = "R$ " + Convert.ToString(valorOpcao) + ",00";
+            lblValorBebida.Text = "R$ " + Convert.ToString(valorBebida) + ",00";
+            lblValorTotal.Text = "R$ " + Convert.ToString(valorTotal) + ",00";
+        }
+
+        private void cmbLanches_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
