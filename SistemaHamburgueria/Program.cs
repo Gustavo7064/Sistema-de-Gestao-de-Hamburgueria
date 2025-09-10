@@ -16,7 +16,7 @@ namespace SistemaHamburgueria
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Funcionario ());
+            Application.Run(new Menu ());
         }
     }
 }

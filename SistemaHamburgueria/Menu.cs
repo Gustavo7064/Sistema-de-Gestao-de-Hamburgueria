@@ -109,5 +109,12 @@ namespace SistemaHamburgueria
                 Application.Exit();
             }
         }
+
+        private void btnFuncionario_Click(object sender, EventArgs e)
+        {
+            FuncionarioLogin fl = new FuncionarioLogin();
+            fl.Show();
+            this.Hide();
+        }
     }
 }

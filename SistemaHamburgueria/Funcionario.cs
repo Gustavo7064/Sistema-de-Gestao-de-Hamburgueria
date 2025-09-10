@@ -120,5 +120,12 @@ namespace SistemaHamburgueria
                 MessageBox.Show("Erro ao carregar pedidos: " + error.Message);
             }
         }
+
+        private void btnVoltar_Click_1(object sender, EventArgs e)
+        {
+            Menu mn = new Menu();
+            mn.Show();
+            this.Hide();
+        }
     }    }
 

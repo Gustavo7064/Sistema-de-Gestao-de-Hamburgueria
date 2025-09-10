@@ -69,6 +69,7 @@
             this.descLanche1 = new System.Windows.Forms.Label();
             this.lblLanche1 = new System.Windows.Forms.Label();
             this.ptcrLanche1 = new System.Windows.Forms.PictureBox();
+            this.btnFuncionario = new System.Windows.Forms.Button();
             this.pnlLanche8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptcrBoxLanche8)).BeginInit();
             this.pnlSidebar.SuspendLayout();
@@ -137,6 +138,7 @@
             // pnlSidebar
             // 
             this.pnlSidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(39)))), ((int)(((byte)(35)))));
+            this.pnlSidebar.Controls.Add(this.btnFuncionario);
             this.pnlSidebar.Controls.Add(this.ptcrBoxLogo);
             this.pnlSidebar.Controls.Add(this.bntBebidas);
             this.pnlSidebar.Controls.Add(this.btnAcompanhamentos);
@@ -574,6 +576,21 @@
             this.ptcrLanche1.TabIndex = 0;
             this.ptcrLanche1.TabStop = false;
             // 
+            // btnFuncionario
+            // 
+            this.btnFuncionario.BackColor = System.Drawing.Color.Silver;
+            this.btnFuncionario.FlatAppearance.BorderSize = 0;
+            this.btnFuncionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFuncionario.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFuncionario.ForeColor = System.Drawing.Color.Black;
+            this.btnFuncionario.Location = new System.Drawing.Point(24, 422);
+            this.btnFuncionario.Name = "btnFuncionario";
+            this.btnFuncionario.Size = new System.Drawing.Size(147, 28);
+            this.btnFuncionario.TabIndex = 44;
+            this.btnFuncionario.Text = "Funcionários";
+            this.btnFuncionario.UseVisualStyleBackColor = false;
+            this.btnFuncionario.Click += new System.EventHandler(this.btnFuncionario_Click);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -667,5 +684,6 @@
         private System.Windows.Forms.Label descLanche1;
         private System.Windows.Forms.Label lblLanche1;
         private System.Windows.Forms.PictureBox ptcrLanche1;
+        private System.Windows.Forms.Button btnFuncionario;
     }
 }
