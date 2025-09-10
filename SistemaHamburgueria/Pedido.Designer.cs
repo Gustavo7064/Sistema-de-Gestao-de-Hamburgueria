@@ -66,7 +66,7 @@
             // 
             // btnSair
             // 
-            this.btnSair.Location = new System.Drawing.Point(745, 311);
+            this.btnSair.Location = new System.Drawing.Point(812, 222);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(100, 40);
             this.btnSair.TabIndex = 31;
@@ -76,9 +76,9 @@
             // 
             // btnSalvar
             // 
-            this.btnSalvar.Location = new System.Drawing.Point(576, 304);
+            this.btnSalvar.Location = new System.Drawing.Point(812, 152);
             this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(111, 40);
+            this.btnSalvar.Size = new System.Drawing.Size(152, 40);
             this.btnSalvar.TabIndex = 29;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
@@ -208,7 +208,7 @@
             // 
             // btnMenu
             // 
-            this.btnMenu.Location = new System.Drawing.Point(679, 217);
+            this.btnMenu.Location = new System.Drawing.Point(671, 222);
             this.btnMenu.Name = "btnMenu";
             this.btnMenu.Size = new System.Drawing.Size(112, 40);
             this.btnMenu.TabIndex = 19;
@@ -250,12 +250,13 @@
             // 
             // btnCalcular
             // 
-            this.btnCalcular.Location = new System.Drawing.Point(648, 153);
+            this.btnCalcular.Location = new System.Drawing.Point(586, 152);
             this.btnCalcular.Name = "btnCalcular";
-            this.btnCalcular.Size = new System.Drawing.Size(283, 40);
+            this.btnCalcular.Size = new System.Drawing.Size(197, 40);
             this.btnCalcular.TabIndex = 30;
             this.btnCalcular.Text = "Calcular";
             this.btnCalcular.UseVisualStyleBackColor = true;
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
             // chkFrango
             // 

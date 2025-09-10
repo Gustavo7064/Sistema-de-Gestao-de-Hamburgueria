@@ -108,11 +108,12 @@
             // lblCardapio
             // 
             this.lblCardapio.AutoSize = true;
-            this.lblCardapio.Location = new System.Drawing.Point(331, 21);
+            this.lblCardapio.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCardapio.Location = new System.Drawing.Point(327, 9);
             this.lblCardapio.Name = "lblCardapio";
-            this.lblCardapio.Size = new System.Drawing.Size(49, 13);
+            this.lblCardapio.Size = new System.Drawing.Size(114, 24);
             this.lblCardapio.TabIndex = 27;
-            this.lblCardapio.Text = "Cardapio";
+            this.lblCardapio.Text = "CARDAPIO";
             // 
             // pnlLanche2
             // 
@@ -296,7 +297,7 @@
             // 
             // btnSair
             // 
-            this.btnSair.Location = new System.Drawing.Point(460, 380);
+            this.btnSair.Location = new System.Drawing.Point(427, 380);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(112, 40);
             this.btnSair.TabIndex = 34;
@@ -306,7 +307,7 @@
             // 
             // btnNovoPedido
             // 
-            this.btnNovoPedido.Location = new System.Drawing.Point(220, 380);
+            this.btnNovoPedido.Location = new System.Drawing.Point(258, 380);
             this.btnNovoPedido.Name = "btnNovoPedido";
             this.btnNovoPedido.Size = new System.Drawing.Size(112, 40);
             this.btnNovoPedido.TabIndex = 35;

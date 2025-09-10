@@ -20,13 +20,13 @@ namespace SistemaHamburgueria
 
         private void Pedido_Load(object sender, EventArgs e)
         {
-            cmbLanches.Items.Add("X-SALADA- R$ 50,00");
-            cmbLanches.Items.Add("X-BACON- R$ 58,00");
-            cmbLanches.Items.Add("COMBO DUPLO SALADA- R$80,00");
-            cmbLanches.Items.Add("X-FRANGO JUNIOR- R$65,00");
-            cmbLanches.Items.Add("X-FRANGO MEDIO- R$70,00");
-            cmbLanches.Items.Add("CHEDDAR DUPLO- R$55,00");
-            cmbLanches.Items.Add("X-SALADA- R$ 50,00");
+            cmbLanches.Items.Add("X-SALADA- R$ 30,00");
+            cmbLanches.Items.Add("X-BACON- R$ 48,00");
+            cmbLanches.Items.Add("COMBO DUPLO SALADA- R$70,00");
+            cmbLanches.Items.Add("X-FRANGO JUNIOR- R$20,00");
+            cmbLanches.Items.Add("X-FRANGO MEDIO- R$23,00");
+            cmbLanches.Items.Add("CHEDDAR DUPLO- R$45,00");
+            cmbLanches.Items.Add("X-SALADA- R$ 30,00");
             cmbAcompanhamentos.Items.Add("Batata Frita P- R$ 20,00");
             cmbAcompanhamentos.Items.Add("Batata Frita M- R$30,00");
             cmbAcompanhamentos.Items.Add("Batata Frita G- R$40,00");
@@ -99,6 +99,59 @@ namespace SistemaHamburgueria
         private void chkSalada_CheckedChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnCalcular_Click(object sender, EventArgs e)
+        {
+            double valorLanche= 0, valorOpcao = 0, valorTotal = 0, valorAcompanhamento = 0;
+            if (cmbLanches.SelectedIndex == 0)
+            {
+                valorPizza = 30 ;
+            }
+            else if (cmbLanches.SelectedIndex == 1)
+            {
+                valorPizza = 48;
+            }
+            else if (cmbLanches.SelectedIndex == 2)
+            {
+                valorPizza = 20;
+            }
+            else if (cmbLanches.SelectedIndex == 3)
+            {
+                valorPizza = 23;
+            }
+            else if (cmbLanches.SelectedIndex == 4)
+            {
+                valorPizza = 50;
+            }
+            else if (cmbLanches.SelectedIndex == 5)
+            {
+                valorPizza = 50;
+            }
+            if (chkBorda.Checked == true)
+            {
+                valorOpcao = valorOpcao + 5;
+            }
+            if (chkTempero.Checked == true)
+            {
+                valorOpcao = valorOpcao + 6;
+            }
+            if (chkCebola.Checked == true)
+            {
+                valorOpcao = valorOpcao + 3;
+            }
+            if (chkCatupiry.Checked == true)
+            {
+                valorOpcao = valorOpcao + 4;
+            }
+            else
+            {
+
+            }
+            valorTotal = valorPizza + valorOpcao;
+            txtValorPizza.Text = Convert.ToString(valorPizza);
+            txtValorOpcionais.Text = Convert.ToString(valorOpcao);
+            txtValorPagar.Text = Convert.ToString(valorTotal);
         }
     }
 }
