@@ -16,5 +16,10 @@ namespace SistemaHamburgueria
         {
             InitializeComponent();
         }
+
+        private void Acompanhamentos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

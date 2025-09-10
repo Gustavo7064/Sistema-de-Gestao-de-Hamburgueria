@@ -185,6 +185,7 @@
             this.bntBebidas.TabIndex = 54;
             this.bntBebidas.Text = "       🥤 Bebidas                             ";
             this.bntBebidas.UseVisualStyleBackColor = false;
+            this.bntBebidas.Click += new System.EventHandler(this.bntBebidas_Click);
             // 
             // button3
             // 

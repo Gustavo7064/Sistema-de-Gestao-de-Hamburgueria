@@ -616,6 +616,7 @@
             this.Controls.Add(this.pnlLanche1);
             this.Name = "Acompanhamentos";
             this.Text = "Acompanhamentos";
+            this.Load += new System.EventHandler(this.Acompanhamentos_Load);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();

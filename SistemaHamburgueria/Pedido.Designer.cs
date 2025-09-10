@@ -65,7 +65,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.bntBebidas = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnAcompanhamentos = new System.Windows.Forms.Button();
             this.btnLanches = new System.Windows.Forms.Button();
             this.btnSair = new System.Windows.Forms.Button();
             this.btnNovoPedido = new System.Windows.Forms.Button();
@@ -444,12 +444,13 @@
             this.cmbBebidas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(42)))), ((int)(((byte)(37)))));
             this.cmbBebidas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmbBebidas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBebidas.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbBebidas.ForeColor = System.Drawing.SystemColors.Menu;
             this.cmbBebidas.FormattingEnabled = true;
             this.cmbBebidas.Location = new System.Drawing.Point(13, 54);
             this.cmbBebidas.Margin = new System.Windows.Forms.Padding(4);
             this.cmbBebidas.Name = "cmbBebidas";
-            this.cmbBebidas.Size = new System.Drawing.Size(343, 21);
+            this.cmbBebidas.Size = new System.Drawing.Size(343, 25);
             this.cmbBebidas.TabIndex = 35;
             // 
             // lblBebidas
@@ -479,12 +480,13 @@
             // 
             this.cmbAcompanhamentos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(42)))), ((int)(((byte)(37)))));
             this.cmbAcompanhamentos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbAcompanhamentos.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbAcompanhamentos.ForeColor = System.Drawing.SystemColors.Menu;
             this.cmbAcompanhamentos.FormattingEnabled = true;
             this.cmbAcompanhamentos.Location = new System.Drawing.Point(13, 54);
             this.cmbAcompanhamentos.Margin = new System.Windows.Forms.Padding(4);
             this.cmbAcompanhamentos.Name = "cmbAcompanhamentos";
-            this.cmbAcompanhamentos.Size = new System.Drawing.Size(343, 21);
+            this.cmbAcompanhamentos.Size = new System.Drawing.Size(343, 25);
             this.cmbAcompanhamentos.TabIndex = 33;
             // 
             // lblAcompanhamentos
@@ -515,12 +517,13 @@
             this.cmbLanches.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(51)))), ((int)(((byte)(45)))));
             this.cmbLanches.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmbLanches.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLanches.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbLanches.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(234)))), ((int)(((byte)(214)))));
             this.cmbLanches.FormattingEnabled = true;
             this.cmbLanches.Location = new System.Drawing.Point(13, 58);
             this.cmbLanches.Margin = new System.Windows.Forms.Padding(4);
             this.cmbLanches.Name = "cmbLanches";
-            this.cmbLanches.Size = new System.Drawing.Size(343, 21);
+            this.cmbLanches.Size = new System.Drawing.Size(343, 25);
             this.cmbLanches.TabIndex = 20;
             this.cmbLanches.SelectedIndexChanged += new System.EventHandler(this.cmbLanches_SelectedIndexChanged_1);
             // 
@@ -554,7 +557,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(39)))), ((int)(((byte)(35)))));
             this.panel1.Controls.Add(this.bntBebidas);
-            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.btnAcompanhamentos);
             this.panel1.Controls.Add(this.btnLanches);
             this.panel1.Controls.Add(this.btnSair);
             this.panel1.Controls.Add(this.btnNovoPedido);
@@ -579,20 +582,26 @@
             this.bntBebidas.TabIndex = 61;
             this.bntBebidas.Text = "       🥤 Bebidas                             ";
             this.bntBebidas.UseVisualStyleBackColor = false;
+            this.bntBebidas.Click += new System.EventHandler(this.bntBebidas_Click);
+            this.bntBebidas.MouseLeave += new System.EventHandler(this.bntBebidas_MouseLeave);
+            this.bntBebidas.MouseHover += new System.EventHandler(this.bntBebidas_MouseHover);
             // 
-            // button3
+            // btnAcompanhamentos
             // 
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(232)))), ((int)(((byte)(200)))));
-            this.button3.Location = new System.Drawing.Point(3, 222);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(276, 32);
-            this.button3.TabIndex = 60;
-            this.button3.Text = "      🍟  Acompanhamentos                                 ";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnAcompanhamentos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAcompanhamentos.FlatAppearance.BorderSize = 0;
+            this.btnAcompanhamentos.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAcompanhamentos.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAcompanhamentos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(232)))), ((int)(((byte)(200)))));
+            this.btnAcompanhamentos.Location = new System.Drawing.Point(3, 222);
+            this.btnAcompanhamentos.Name = "btnAcompanhamentos";
+            this.btnAcompanhamentos.Size = new System.Drawing.Size(276, 32);
+            this.btnAcompanhamentos.TabIndex = 60;
+            this.btnAcompanhamentos.Text = "      🍟  Acompanhamentos                                 ";
+            this.btnAcompanhamentos.UseVisualStyleBackColor = false;
+            this.btnAcompanhamentos.Click += new System.EventHandler(this.button3_Click);
+            this.btnAcompanhamentos.MouseLeave += new System.EventHandler(this.button3_MouseLeave);
+            this.btnAcompanhamentos.MouseHover += new System.EventHandler(this.button3_MouseHover);
             // 
             // btnLanches
             // 
@@ -609,6 +618,9 @@
             this.btnLanches.TabIndex = 59;
             this.btnLanches.Text = "       🍔 Lanches                                 ";
             this.btnLanches.UseVisualStyleBackColor = false;
+            this.btnLanches.Click += new System.EventHandler(this.btnLanches_Click);
+            this.btnLanches.MouseLeave += new System.EventHandler(this.btnLanches_MouseLeave);
+            this.btnLanches.MouseHover += new System.EventHandler(this.btnLanches_MouseHover);
             // 
             // btnSair
             // 
@@ -623,6 +635,7 @@
             this.btnSair.TabIndex = 57;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = false;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click_1);
             // 
             // btnNovoPedido
             // 
@@ -869,7 +882,7 @@
         private System.Windows.Forms.CheckBox chkHabmburguer;
         private System.Windows.Forms.CheckBox chkCheddar;
         private System.Windows.Forms.Button bntBebidas;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnAcompanhamentos;
         private System.Windows.Forms.Button btnLanches;
         private System.Windows.Forms.Button btnSair;
         private System.Windows.Forms.Button btnNovoPedido;

@@ -16,5 +16,10 @@ namespace SistemaHamburgueria
         {
             InitializeComponent();
         }
+
+        private void bntBebidas_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
