@@ -12,6 +12,7 @@ namespace SistemaHamburgueria
 {
     public partial class FuncionarioLogin : Form
     {
+        Conexao con = new Conexao();
         public FuncionarioLogin()
         {
             InitializeComponent();

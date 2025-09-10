@@ -77,6 +77,8 @@
             this.chkCatupiryA = new System.Windows.Forms.CheckBox();
             this.chkHabmburguer = new System.Windows.Forms.CheckBox();
             this.chkCheddar = new System.Windows.Forms.CheckBox();
+            this.lblNome = new System.Windows.Forms.Label();
+            this.txtNome = new System.Windows.Forms.TextBox();
             this.pnlResumo.SuspendLayout();
             this.grpRetirar.SuspendLayout();
             this.pnlBebidas.SuspendLayout();
@@ -770,12 +772,34 @@
             this.chkCheddar.Text = "Cheddar (R$ 6,00)";
             this.chkCheddar.UseVisualStyleBackColor = true;
             // 
+            // lblNome
+            // 
+            this.lblNome.AutoSize = true;
+            this.lblNome.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(234)))), ((int)(((byte)(214)))));
+            this.lblNome.Location = new System.Drawing.Point(653, 33);
+            this.lblNome.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNome.Name = "lblNome";
+            this.lblNome.Size = new System.Drawing.Size(208, 32);
+            this.lblNome.TabIndex = 50;
+            this.lblNome.Text = "Digite seu nome:";
+            this.lblNome.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // txtNome
+            // 
+            this.txtNome.Location = new System.Drawing.Point(869, 41);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(156, 20);
+            this.txtNome.TabIndex = 51;
+            // 
             // Pedido
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(35)))), ((int)(((byte)(25)))));
             this.ClientSize = new System.Drawing.Size(1054, 613);
+            this.Controls.Add(this.txtNome);
+            this.Controls.Add(this.lblNome);
             this.Controls.Add(this.pnlResumo);
             this.Controls.Add(this.pnlBebidas);
             this.Controls.Add(this.pnlAcompanhamentos);
@@ -858,5 +882,7 @@
         private System.Windows.Forms.Button btnLanches;
         private System.Windows.Forms.Button btnSair;
         private System.Windows.Forms.Button btnNovoPedido;
+        private System.Windows.Forms.Label lblNome;
+        private System.Windows.Forms.TextBox txtNome;
     }
 }

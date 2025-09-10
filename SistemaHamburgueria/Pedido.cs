@@ -168,13 +168,14 @@ namespace SistemaHamburgueria
                 try
                 {
                     //inserindo dados no banco
-                    string sql = "insert into tbPedido(valorLanche,valorOpcao,valorTotal,valorBebida,valorAcompanhamento) values(@vlanche,@vopcao, @total,@vbebida, @vacompanhamentos)";
+                    string sql = "insert into tbPedido(valorLanche,valorOpcao,valorTotal,valorBebida,valorAcompanhamento,valorNome) values(@vlanche,@vopcao, @total,@vbebida, @vacompanhamentos,@vNome)";
                     MySqlCommand cmd = new MySqlCommand(sql, con.ConnectarBD());
                     cmd.Parameters.Add("@vlanche", MySqlDbType.Text).Value = cmbLanches.Text;
                     cmd.Parameters.Add("@vopcao", MySqlDbType.Text).Value = lblValorOpcionais.Text;
-                    cmd.Parameters.Add("@total", MySqlDbType.Text).Value = lblValorPagar.Text;
+                    cmd.Parameters.Add("@total", MySqlDbType.Text).Value = lblValorTotal.Text;
                     cmd.Parameters.Add("@vbebida", MySqlDbType.Text).Value = cmbBebidas.Text;
                     cmd.Parameters.Add("@vacompanhamentos", MySqlDbType.Text).Value = cmbAcompanhamentos.Text;
+                    cmd.Parameters.Add("@vNome", MySqlDbType.Text).Value = txtNome.Text;
                     cmd.ExecuteNonQuery();
 
                     MessageBox.Show("Dados cadastrados com Sucesso !!!");
@@ -335,6 +336,7 @@ namespace SistemaHamburgueria
             lblValorOpcionais.Text = "R$ " + Convert.ToString(valorOpcao) + ",00";
             lblValorBebida.Text = "R$ " + Convert.ToString(valorBebida) + ",00";
             lblValorTotal.Text = "R$ " + Convert.ToString(valorTotal) + ",00";
+
         }
 
         private void cmbLanches_SelectedIndexChanged_1(object sender, EventArgs e)
@@ -348,6 +350,7 @@ namespace SistemaHamburgueria
             if (sair == DialogResult.No)
             {
                 Pedido ped = new Pedido();
+
                 ped.Show();
                 this.Hide();
             }
