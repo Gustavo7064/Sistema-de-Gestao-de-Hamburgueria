@@ -1,26 +1,36 @@
-# 🍔 Sistema de Gestão de Hamburgueria
+# 🍔 Sistema de Pedidos - Hamburgueria (C#)
 
-Aplicação desenvolvida em **C#** que simula o funcionamento de uma hamburgueria, permitindo o **cadastro de produtos**, **criação de pedidos** e **cálculo automático do valor total**.
+Este projeto consiste em um **sistema simples de gerenciamento de pedidos para uma hamburgueria**, desenvolvido em **C#** com o objetivo de praticar conceitos fundamentais de **programação orientada a objetos (POO)** e estruturação de aplicações.
 
-O projeto foi criado com o objetivo de praticar **lógica de programação** e **programação orientada a objetos**, utilizando conceitos fundamentais do desenvolvimento em C#.
+A aplicação simula o funcionamento básico de um sistema de pedidos, permitindo registrar clientes, adicionar itens ao pedido, organizar os produtos escolhidos e calcular automaticamente o valor total da compra.
 
 ## 🚀 Funcionalidades
 
-- Cadastro de produtos do cardápio
 - Criação e gerenciamento de pedidos
-- Cálculo automático do valor total do pedido
-- Manipulação de dados utilizando **List<T>**
-- Organização da lógica utilizando **classes e métodos**
+- Adição de itens (hambúrgueres, bebidas ou complementos)
+- Organização dos produtos dentro do pedido
+- Cálculo automático do valor total
+- Estrutura de histórico de pedidos
+- Manipulação de dados utilizando listas
 
 ## 🛠 Tecnologias utilizadas
 
-- C#
-- .NET
+- **C#**
+- **.NET**
 - Programação Orientada a Objetos (POO)
-- Estruturas de dados com `List<T>`
+- Estruturas de dados com **List**
+- Lógica de negócios aplicada ao fluxo de pedidos
+
+## 📚 Conceitos aplicados no projeto
+
+Durante o desenvolvimento foram aplicados diversos conceitos importantes para o desenvolvimento backend:
+
+- Criação de **classes e objetos**
+- Utilização de **métodos para manipulação de dados**
+- **Encapsulamento** e organização da lógica de negócio
+- Uso de **listas para armazenamento de itens**
+- Separação de responsabilidades dentro da aplicação
 
 ## 🎯 Objetivo do projeto
 
-Este projeto foi desenvolvido para reforçar conceitos essenciais de desenvolvimento em C#, incluindo **estruturação de código, organização da lógica de negócio e manipulação de dados em memória**.
-
----
+O principal objetivo deste projeto é reforçar conhecimentos em **C# e desenvolvimento backend**, simulando um sistema real de pedidos e aplicando boas práticas de organização de código e modelagem de dados.
