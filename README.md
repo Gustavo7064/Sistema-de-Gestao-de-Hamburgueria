@@ -25,6 +25,7 @@ A aplicação simula o funcionamento básico de um sistema de pedidos, permitind
 
 Durante o desenvolvimento foram aplicados diversos conceitos importantes para o desenvolvimento backend:
 
+- SCRUM
 - Criação de **classes e objetos**
 - Utilização de **métodos para manipulação de dados**
 - **Encapsulamento** e organização da lógica de negócio
